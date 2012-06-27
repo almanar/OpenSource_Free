@@ -1,0 +1,3 @@
+E:\depot-server\M10\OPEN_CPU\EMCU_Customer\audioresource\audio\wav11k.wav
+E:\depot-server\M10\OPEN_CPU\EMCU_Customer\audioresource\audio\amr44k.amr
+E:\depot-server\M10\OPEN_CPU\EMCU_Customer\audioresource\audio\mp344k.mp3

@@ -1,0 +1,10 @@
+meter.o: Meter.c
+meter.o: LPC214x.h
+meter.o: Types.h
+meter.o: Global.h
+meter.o: Timer.h
+meter.o: Uart.h
+meter.o: C:\Keil\ARM\RV31\INC\string.h
+meter.o: Meter.h
+meter.o: Dataflash.h
+meter.o: MiscFunctions.h

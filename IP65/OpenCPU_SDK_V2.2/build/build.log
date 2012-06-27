@@ -1,0 +1,159 @@
+;Building Log 
+"example_at.c", line 175: Warning: C3040E: no external declaration in translation unit
+example_at.c: 1 warning, 0 errors, 0 serious errors
+"example_gpio.c", line 180: Warning: C3040E: no external declaration in translation unit
+example_gpio.c: 1 warning, 0 errors, 0 serious errors
+"example_eint.c", line 141: Warning: C3040E: no external declaration in translation unit
+example_eint.c: 1 warning, 0 errors, 0 serious errors
+"example_memory.c", line 108: Warning: C3040E: no external declaration in translation unit
+example_memory.c: 1 warning, 0 errors, 0 serious errors
+"example_pwm.c", line 110: Warning: C3040E: no external declaration in translation unit
+example_pwm.c: 1 warning, 0 errors, 0 serious errors
+"example_clk.c", line 104: Warning: C3040E: no external declaration in translation unit
+example_clk.c: 1 warning, 0 errors, 0 serious errors
+"example_alert.c", line 124: Warning: C3040E: no external declaration in translation unit
+example_alert.c: 1 warning, 0 errors, 0 serious errors
+"example_keyboard.c", line 143: Warning: C3040E: no external declaration in translation unit
+example_keyboard.c: 1 warning, 0 errors, 0 serious errors
+"example_lcd.c", line 146: Warning: C3040E: no external declaration in translation unit
+example_lcd.c: 1 warning, 0 errors, 0 serious errors
+"example_i2c.c", line 144: Warning: C3040E: no external declaration in translation unit
+example_i2c.c: 1 warning, 0 errors, 0 serious errors
+"example_file.c", line 408: Warning: C3040E: no external declaration in translation unit
+example_file.c: 1 warning, 0 errors, 0 serious errors
+"example_audio.c", line 313: Warning: C3040E: no external declaration in translation unit
+example_audio.c: 1 warning, 0 errors, 0 serious errors
+"example_transpass.c", line 53: Warning: C3040E: no external declaration in translation unit
+example_transpass.c: 1 warning, 0 errors, 0 serious errors
+"..\qlinc\ql_error.h", line 93: Warning: C2220W: Superfluous ',' in 'enum' declaration
+"example_tcpip.c", line 217: Warning: C2905E: implicit cast (to 'signed char') overflow
+"example_tcpip.c", line 217: Warning: C2905E: implicit cast (to 'signed char') overflow
+"example_tcpip.c", line 219: Warning: C2905E: implicit cast (to 'signed char') overflow
+"example_tcpip.c", line 219: Warning: C2905E: implicit cast (to 'signed char') overflow
+"example_tcpip.c", line 1113: Warning: C2870W: variable 'j' declared but not used
+"example_tcpip.c", line 1406: Warning: C2870W: variable 'i' declared but not used
+"example_tcpip.c", line 1888: Warning: C2899W: unsigned comparison with 0 is always true: '>='
+"example_tcpip.c", line 1898: Warning: C2899W: unsigned comparison with 0 is always true: '>='
+"example_tcpip.c", line 2313: Warning: C2870W: variable 'buff1' declared but not used
+"example_tcpip.c", line 2313: Warning: C2870W: variable 'buff0' declared but not used
+"example_tcpip.c", line 2313: Warning: C2870W: variable 'send1' declared but not used
+"example_tcpip.c", line 2313: Warning: C2870W: variable 'buff' declared but not used
+"example_tcpip.c", line 2313: Warning: C2870W: variable 'fset' declared but not used
+"example_tcpip.c", line 2313: Warning: C2870W: variable 't_val' declared but not used
+"example_tcpip.c", line 2313: Warning: C2870W: variable 'port' declared but not used
+"example_tcpip.c", line 2313: Warning: C2870W: variable 'smsval' declared but not used
+"example_tcpip.c", line 2313: Warning: C2870W: variable 'bufff0' declared but not used
+"example_tcpip.c", line 2313: Warning: C2870W: variable 'timerval' declared but not used
+"example_tcpip.c", line 2313: Warning: C2870W: variable 'sersettings' declared but not used
+"example_tcpip.c", line 2313: Warning: C2870W: variable 'U1ret2' declared but not used
+"example_tcpip.c", line 2313: Warning: C2870W: variable 'U1ret1' declared but not used
+"example_tcpip.c", line 2313: Warning: C2870W: variable 'U1ret3' declared but not used
+"example_tcpip.c", line 2313: Warning: C2870W: variable 'k' declared but not used
+"example_tcpip.c", line 2451: Warning: C2870W: variable 'i1' declared but not used
+"example_tcpip.c", line 2553: Warning: C2898W: unsigned comparison with 0 is always false: '<'
+"example_tcpip.c", line 2558: Warning: C2898W: unsigned comparison with 0 is always false: '<'
+"example_tcpip.c", line 2562: Warning: C2905E: implicit cast (to 'signed char') overflow
+"example_tcpip.c", line 2723: Warning: C2870W: variable 'j' declared but not used
+"example_tcpip.c", line 2783: Warning: C2870W: variable 'p2' declared but not used
+"example_tcpip.c", line 3125: Warning: C2870W: variable 'j' declared but not used
+"example_tcpip.c", line 3125: Warning: C2870W: variable 'p2' declared but not used
+"example_tcpip.c", line 3371: Warning: C2870W: variable 'j' declared but not used
+"example_tcpip.c", line 3371: Warning: C2870W: variable 'i' declared but not used
+"example_tcpip.c", line 3371: Warning: C2870W: variable 'p2' declared but not used
+"example_tcpip.c", line 3623: Warning: C2870W: variable 'j' declared but not used
+"example_tcpip.c", line 3623: Warning: C2870W: variable 'p2' declared but not used
+"example_tcpip.c", line 4597: Warning: C2870W: variable 'ret3' declared but not used
+"example_tcpip.c", line 4597: Warning: C2870W: variable 'buff1' declared but not used
+"example_tcpip.c", line 4597: Warning: C2870W: variable 'buff0' declared but not used
+"example_tcpip.c", line 4597: Warning: C2870W: variable 'test1' declared but not used
+"example_tcpip.c", line 4597: Warning: C2870W: variable 'ret' declared but not used
+"example_tcpip.c", line 4597: Warning: C2870W: variable 'ant_status' declared but not used
+"example_tcpip.c", line 4597: Warning: C2870W: variable 'chek_notfix' declared but not used
+"example_tcpip.c", line 4597: Warning: C2870W: variable 'jj' declared but not used
+"example_tcpip.c", line 4597: Warning: C2870W: variable 'k' declared but not used
+"example_tcpip.c", line 4694: Warning: C2899W: unsigned comparison with 0 is always true: '>='
+"example_tcpip.c", line 4718: Warning: C2899W: unsigned comparison with 0 is always true: '>='
+"example_tcpip.c", line 4781: Warning: C2899W: unsigned comparison with 0 is always true: '>='
+"example_tcpip.c", line 5261: Warning: C2917W: no side effect in void context: '<expr> == <expr>'
+"example_tcpip.c", line 5499: Warning: C2870W: variable 'len' declared but not used
+"example_tcpip.c", line 5499: Warning: C2870W: variable 'iret' declared but not used
+"example_tcpip.c", line 5499: Warning: C2870W: variable 'pinlevel' declared but not used
+"example_tcpip.c", line 5499: Warning: C2870W: variable 'pindirection' declared but not used
+"example_tcpip.c", line 5499: Warning: C2870W: variable 'pinpullenable' declared but not used
+"example_tcpip.c", line 5499: Warning: C2870W: variable 'mod' declared but not used
+"example_tcpip.c", line 5499: Warning: C2870W: variable 'pin' declared but not used
+"example_tcpip.c", line 5630: Warning: C2898W: unsigned comparison with 0 is always false: '<'
+"example_tcpip.c", line 5689: Warning: C2898W: unsigned comparison with 0 is always false: '<'
+"example_tcpip.c", line 5754: Warning: C2870W: variable 'initialized' declared but not used
+"example_tcpip.c", line 5754: Warning: C2870W: variable 'period' declared but not used
+"example_tcpip.c", line 5754: Warning: C2870W: variable 't' declared but not used
+"example_tcpip.c", line 5754: Warning: C2870W: variable 'process' declared but not used
+"example_tcpip.c", line 5754: Warning: C2870W: variable 'j' declared but not used
+"example_tcpip.c", line 5754: Warning: C2870W: variable 'k' declared but not used
+"example_tcpip.c", line 5754: Warning: C2870W: variable 'ret1' declared but not used
+"example_tcpip.c", line 5754: Warning: C2870W: variable 'i' declared but not used
+"example_tcpip.c", line 5754: Warning: C2870W: variable 'len1' declared but not used
+"example_tcpip.c", line 5754: Warning: C2870W: variable 'array' declared but not used
+"example_tcpip.c", line 5754: Warning: C2870W: variable 'ct' declared but not used
+"example_tcpip.c", line 5754: Warning: C2870W: variable 'pfile' declared but not used
+"example_tcpip.c", line 5754: Warning: C2870W: variable 'pdata' declared but not used
+"example_tcpip.c", line 5785: Warning: C2916W: use of '=' in condition context
+"example_tcpip.c", line 5859: Warning: C2905E: implicit cast (to 'signed char') overflow
+"example_tcpip.c", line 5865: Warning: C2905E: implicit cast (to 'signed char') overflow
+"example_tcpip.c", line 5872: Warning: C2905E: implicit cast (to 'signed char') overflow
+"example_tcpip.c", line 5878: Warning: C2905E: implicit cast (to 'signed char') overflow
+"example_tcpip.c", line 5979: Warning: C2870W: variable 'ret' declared but not used
+"example_tcpip.c", line 5990: Warning: C2905E: implicit cast (to 'signed char') overflow
+"example_tcpip.c", line 5995: Warning: C2905E: implicit cast (to 'signed char') overflow
+"example_tcpip.c", line 6043: Warning: C2905E: implicit cast (to 'signed char') overflow
+"example_tcpip.c", line 6048: Warning: C2905E: implicit cast (to 'signed char') overflow
+"example_tcpip.c", line 6106: Warning: C2916W: use of '=' in condition context
+"example_tcpip.c", line 6154: Warning: C2905E: implicit cast (to 'signed char') overflow
+"example_tcpip.c", line 6159: Warning: C2905E: implicit cast (to 'signed char') overflow
+"example_tcpip.c", line 6175: Warning: C2870W: variable 'dataLen' declared but not used
+"example_tcpip.c", line 6219: Warning: C2905E: implicit cast (to 'signed char') overflow
+"example_tcpip.c", line 1113: Warning: C2873W: implicit return in non-void function
+example_tcpip.c: 88 warnings, 0 errors, 0 serious errors
+"example_multitask.c", line 383: Warning: C3040E: no external declaration in translation unit
+example_multitask.c: 1 warning, 0 errors, 0 serious errors
+"example_sms.c", line 288: Warning: C3040E: no external declaration in translation unit
+example_sms.c: 1 warning, 0 errors, 0 serious errors
+"example_headset.c", line 147: Warning: C3040E: no external declaration in translation unit
+example_headset.c: 1 warning, 0 errors, 0 serious errors
+"example_lcm_st7545t.c", line 17: Warning: C2809W: character sequence /* inside comment
+"example_lcm_st7545t.c", line 18: Warning: C2809W: character sequence /* inside comment
+"example_lcm_st7545t.c", line 637: Warning: C3040E: no external declaration in translation unit
+example_lcm_st7545t.c: 3 warnings, 0 errors, 0 serious errors
+"example_multitask_port.c", line 218: Warning: C3040E: no external declaration in translation unit
+example_multitask_port.c: 1 warning, 0 errors, 0 serious errors
+"example_lcm_uc1701.c", line 17: Warning: C2809W: character sequence /* inside comment
+"example_lcm_uc1701.c", line 18: Warning: C2809W: character sequence /* inside comment
+"example_lcm_uc1701.c", line 656: Warning: C3040E: no external declaration in translation unit
+example_lcm_uc1701.c: 3 warnings, 0 errors, 0 serious errors
+"example_tcplong.c", line 1262: Warning: C3040E: no external declaration in translation unit
+example_tcplong.c: 1 warning, 0 errors, 0 serious errors
+"example_multimemory.c", line 333: Warning: C3040E: no external declaration in translation unit
+example_multimemory.c: 1 warning, 0 errors, 0 serious errors
+"example_lowrateuart.c", line 71: Warning: C3040E: no external declaration in translation unit
+example_lowrateuart.c: 1 warning, 0 errors, 0 serious errors
+"example_eintcallback.c", line 134: Warning: C3040E: no external declaration in translation unit
+example_eintcallback.c: 1 warning, 0 errors, 0 serious errors
+"example_fota.c", line 336: Warning: C3040E: no external declaration in translation unit
+example_fota.c: 1 warning, 0 errors, 0 serious errors
+"example_helloWorld.c", line 154: Warning: C3040E: no external declaration in translation unit
+example_helloWorld.c: 1 warning, 0 errors, 0 serious errors
+"example_fota_http.c", line 406: Warning: C3040E: no external declaration in translation unit
+example_fota_http.c: 1 warning, 0 errors, 0 serious errors
+"example_tts.c", line 225: Warning: C3040E: no external declaration in translation unit
+example_tts.c: 1 warning, 0 errors, 0 serious errors
+"atc_pipe.c", line 60: Warning: C3040E: no external declaration in translation unit
+atc_pipe.c: 1 warning, 0 errors, 0 serious errors
+"example_call.c", line 806: Warning: C3040E: no external declaration in translation unit
+example_call.c: 1 warning, 0 errors, 0 serious errors
+"example_float_test.c", line 143: Warning: C3040E: no external declaration in translation unit
+example_float_test.c: 1 warning, 0 errors, 0 serious errors
+"example_led.c", line 222: Warning: C3040E: no external declaration in translation unit
+example_led.c: 1 warning, 0 errors, 0 serious errors
+"build\scat6223.txt", line 21: Warning: L6314W: build\scat6223.txt(line 21, col 20) No section matches pattern *(NVZI).
+Warning: L6305W: Image does not have an entry point. (Not specified or not set due to multiple choices.)
+Finished: 0 information, 2 warning and 0 error messages.

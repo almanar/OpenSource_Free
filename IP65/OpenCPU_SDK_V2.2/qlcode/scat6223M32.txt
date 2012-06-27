@@ -1,0 +1,25 @@
+
+ROM 0x082B9000 0x00047000
+{
+   ROMCPU0 0x082B9000 
+   {
+      * (GABADISP)
+   }
+   
+   ROMCPU1 +0 
+   {
+      * (init)
+      * (+RO)    
+   }
+    ;1M ram , 100K for opencpu application bin
+    EXTSRAMCPU 0xE7000  0x19000   
+    {
+  	 * (+RW, +ZI)
+     }
+
+     NV_EXTSRAM +0x00
+     {	
+      * (NVRW, NVZI) 
+     }
+}
+

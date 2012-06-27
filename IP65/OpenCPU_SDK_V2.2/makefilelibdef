@@ -1,0 +1,117 @@
+
+#-------------------------------------------------------------------------------
+# config tools, tool path
+#-------------------------------------------------------------------------------
+DIR_ARM        =  c:\progra~1\arm\adsv1_2
+DIR_ARM := $(strip $(DIR_ARM))
+DIR_TOOL       =  $(DIR_ARM)\bin
+DIR_ARMLIB     =  $(DIR_ARM)\lib
+DIR_ARMINC     =  $(DIR_ARM)\include
+DIR_TOOL := $(strip $(DIR_TOOL))
+CC32 		= $(DIR_TOOL)\armcc.exe
+CC 		= $(DIR_TOOL)\tcc.exe
+LINK           =  $(DIR_TOOL)\armlink.exe          # Linker
+ASM            =  $(DIR_TOOL)\armasm.exe           # ARM assembler
+AR             =  $(DIR_TOOL)\armar.exe            # Library tool
+FROMELF     =  $(DIR_TOOL)\fromelf.exe          # Binary tool
+MAKE		= tools\make.exe
+
+#-------------------------------------------------------------------------------
+# config dir, other file
+#-------------------------------------------------------------------------------
+
+BIN_DIR=build
+OBJDIR=$(strip $(BIN_DIR))\obj
+OBJLIST=$(strip $(BIN_DIR))\~objlist.tmp
+BUILDLOG=$(strip $(BIN_DIR))\build.log
+
+
+CUSTOMERLIB_DIR=customerlib
+
+
+#-------------------------------------------------------------------------------
+# config compiler, linker opt
+#-------------------------------------------------------------------------------
+C_FLAGS =  -cpu ARM7EJ-S -littleend -O2  -apcs /interwork  -fa  -zo -c# -fpu None ---no float
+C_DEF= -DMT6223
+S_FLAGS = -littleend -cpu ARM7EJ-S  -apcs /interwork  -g #   -keep -fpu None
+S_DEF=-pd "MT6223 SETL {TRUE}"
+AR_FLAGS = -create
+vpath %.o ..\$(OBJDIR)
+
+
+TempParantDir = $(shell cd)
+
+
+LIB_DIR := $(strip $(LIB_DIR))
+LIB_NAME := $(strip $(LIB_NAME))
+
+#-------------------------------------------------------------------------------
+# config dep
+#-------------------------------------------------------------------------------
+new: mngdir preparelib  compilerlibdir arlib
+	@echo Created lib $(LIB_NAME).a
+	@del /f .\$(OBJLIST)
+
+mngdir:
+	@if not exist $(BIN_DIR)  (md $(BIN_DIR))
+	@if not exist $(OBJDIR)  (md $(OBJDIR))
+	@if not exist $(CUSTOMERLIB_DIR)  (md $(CUSTOMERLIB_DIR))
+
+preparelib:
+	@echo ;objlist > .\$(OBJLIST)
+	@del /f .\$(OBJLIST)
+	@if not exist .\$(OBJDIR)\$(LIB_DIR)  \
+		((@echo md $ .\$(OBJDIR)\$(LIB_DIR)) & \
+		(md $ .\$(OBJDIR)\$(LIB_DIR)))
+	@echo ;objlist > .\$(OBJLIST)
+	@echo ;Building Log > .\$(BUILDLOG)
+
+compilerlibdir:
+	@if exist $(LIB_DIR) \
+		@$(MAKE) -C $(LIB_DIR)  2>>.\$(BUILDLOG)
+
+mklibsubpaths:
+	@echo Create lib subdir in $(OBJDIR)\$(LIB_DIR) ... $(SUBPATHS)
+	@for /d %%y in ($(SUBPATHS)) do \
+		@if not exist ..\$(OBJDIR)\$(LIB_DIR)\%%y  \
+			((@echo md $ ..\$(OBJDIR)\$(LIB_DIR)\%%y ) & \
+			(md $ ..\$(OBJDIR)\$(LIB_DIR)\%%y))
+			
+arlib:
+	@echo aring lib $(LIB_NAME).a
+	@$(AR)  -r $(CUSTOMERLIB_DIR)\$(LIB_NAME).a  -VIA $(OBJLIST)  2>>.\$(BUILDLOG)
+
+clean:
+	@echo Cleaning all file
+	@if exist $(LIB_DIR) \
+		@$(MAKE) -C $(LIB_DIR)  cleanall
+
+cleanall:
+	@for %%y in ($(OBJS)) do \
+		@del /f ..\$(OBJDIR)\$(LIB_DIR)\%%y
+
+listlibobj:
+	@for %%y in ($(OBJS)) do \
+		@echo .\$(OBJDIR)\$(LIB_DIR)\%%y >> ..\$(OBJLIST)
+	
+#@echo .\$(OBJDIR)\$@ >> ..\$(OBJLIST)
+
+#-------------------------------------------------------------------------------
+# C, S, CPP code inference rules
+#-------------------------------------------------------------------------------
+%.o:%.c
+	@echo Building $(OBJDIR)\$(LIB_DIR)\$@   
+	@$(CC) $(C_FLAGS) $(INCLUDES) $(C_DEF)  -o  ..\$(OBJDIR)\$(LIB_DIR)\$@ $<  
+
+#-------------------------------------------------------------------------------
+# Assembly code inference rules
+#-------------------------------------------------------------------------------
+%.o:%.s
+	@echo Building  $(OBJDIR)\$@ 
+	@$(ASM) $(S_FLAGS) $(S_DEF) $(ADEFS)  -o  ..\$(OBJDIR)\$(LIB_DIR)\$@  $<
+
+
+export  BIN_DIR ELF_OUTPUT BIN_OUTPUT  LIS_OUTPUT SYM_OUTPUT MOD_LIST DIR_ARM DIR_TOOL DIR_ARMLIB DIR_ARMINC DIR_TOOL CC LINK ASM  AR FROMELF MAKE C_FLAGS S_FLAGS AR_FLAGS INCLUDES C_DEF OBJDIR OBJLIST LIB_DIR LIB_NAME
+
+

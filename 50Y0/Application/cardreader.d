@@ -1,0 +1,9 @@
+cardreader.o: cardreader.c
+cardreader.o: Types.h
+cardreader.o: Timer.h
+cardreader.o: Global.h
+cardreader.o: Lcd.h
+cardreader.o: MiscFunctions.h
+cardreader.o: Uart.h
+cardreader.o: Extint.h
+cardreader.o: CardReader.h

@@ -1,0 +1,1 @@
+-c --device DARMP -g -O0 --apcs=interwork -I "C:\Keil\ARM\INC\Philips" -o "meter.o" --omf_browse "meter.crf" --depend "meter.d" "Meter.c"

@@ -1,0 +1,1 @@
+-c --device DARMP -g -O0 --apcs=interwork -I "C:\Keil\ARM\INC\Philips" -o "dataflash.o" --omf_browse "dataflash.crf" --depend "dataflash.d" "dataflash.c"

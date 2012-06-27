@@ -1,0 +1,1 @@
+-c --device DARMP -g -O0 --apcs=interwork -I "C:\Keil\ARM\INC\Philips" -o "miscfunctions.o" --omf_browse "miscfunctions.crf" --depend "miscfunctions.d" "MiscFunctions.c"

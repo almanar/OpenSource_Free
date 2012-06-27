@@ -1,0 +1,33 @@
+*** Creating Trace Output File 'Arya.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"startup.o"'
+### List of Objects: adding '"irq.o"'
+### List of Objects: adding '"global.o"'
+### List of Objects: adding '"timer.o"'
+### List of Objects: adding '"spi.o"'
+### List of Objects: adding '"uart.o"'
+### List of Objects: adding '"dataflash.o"'
+### List of Objects: adding '"lcd.o"'
+### List of Objects: adding '"keypad.o"'
+### List of Objects: adding '"extint.o"'
+### List of Objects: adding '"wdt.o"'
+### List of Objects: adding '"cardreader.o"'
+### List of Objects: adding '"miscfunctions.o"'
+### List of Objects: adding '"app.o"'
+### List of Objects: adding '"meter.o"'
+### ADS-LD Command completed:
+--device DARMP "startup.o" "irq.o" "global.o" "timer.o" "spi.o" "uart.o" "dataflash.o" "lcd.o" "keypad.o" "extint.o" "wdt.o" "cardreader.o" "miscfunctions.o" "app.o" "meter.o" --strict --scatter "Arya.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\Arya.map" -o "Arya.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'Arya.axf'
+### ADS-LD Command File: 'Arya.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'Arya.lnp', Handle=0x00000360
+### Writing '.lnp' file
+### ADS-LD Command file 'Arya.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

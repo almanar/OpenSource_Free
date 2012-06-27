@@ -1,0 +1,4 @@
+--device DARMP "startup.o" "irq.o" "global.o" "timer.o" "spi.o" "uart.o" "dataflash.o" "lcd.o" "keypad.o" "extint.o" "wdt.o" "cardreader.o" "miscfunctions.o" "app.o" "meter.o" --strict --scatter "Arya.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\Arya.map" -o "Arya.axf"

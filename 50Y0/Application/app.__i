@@ -1,0 +1,1 @@
+-c --device DARMP -g -O0 --apcs=interwork -I "C:\Keil\ARM\INC\Philips" -o "app.o" --omf_browse "app.crf" --depend "app.d" "app.c"

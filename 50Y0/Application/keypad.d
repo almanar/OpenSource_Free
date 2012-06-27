@@ -1,0 +1,13 @@
+keypad.o: keypad.c
+keypad.o: LPC214x.h
+keypad.o: Types.h
+keypad.o: Uart.h
+keypad.o: Timer.h
+keypad.o: MiscFunctions.h
+keypad.o: LCD.h
+keypad.o: Global.h
+keypad.o: Keypad.h
+keypad.o: C:\Keil\ARM\RV31\INC\string.h
+keypad.o: Meter.h
+keypad.o: Dataflash.h
+keypad.o: WDT.h

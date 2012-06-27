@@ -1,0 +1,1 @@
+-c --device DARMP -g -O0 --apcs=interwork -I "C:\Keil\ARM\INC\Philips" -o "wdt.o" --omf_browse "wdt.crf" --depend "wdt.d" "wdt.c"

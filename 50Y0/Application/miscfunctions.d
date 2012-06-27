@@ -1,0 +1,13 @@
+miscfunctions.o: MiscFunctions.c
+miscfunctions.o: LPC214x.h
+miscfunctions.o: Types.h
+miscfunctions.o: Lcd.h
+miscfunctions.o: Uart.h
+miscfunctions.o: DataFlash.h
+miscfunctions.o: Timer.h
+miscfunctions.o: Keypad.h
+miscfunctions.o: Global.h
+miscfunctions.o: Meter.h
+miscfunctions.o: MiscFunctions.h
+miscfunctions.o: WDT.h
+miscfunctions.o: C:\Keil\ARM\RV31\INC\string.h
